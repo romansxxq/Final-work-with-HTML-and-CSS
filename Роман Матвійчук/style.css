@@ -1,0 +1,128 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000; 
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    color: #fff;
+    animation: neonGlow 2s infinite alternate;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+}
+
+.avatar-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-photo:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 1.8em;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 5px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skills-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
+}
+
+.skills-list img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+#contacts p {
+    text-align: center;
+    font-size: 1.2em;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #000;
+    color: #fff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    margin-top: 20px;
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    }
+    to {
+        text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff;
+    }
+}
